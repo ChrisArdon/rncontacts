@@ -2,6 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text } from "react-native";
+import { LOGIN, REGISTER } from "../constants/routeNames";
 
 const Login = () => {
     return(
@@ -24,8 +25,8 @@ const AuthNavigator = () => {
     const AuthStack = createStackNavigator();
     return(
         <AuthStack.Navigator>
-            <AuthStack.Screen name='Login' component={Login}></AuthStack.Screen>
-            <AuthStack.Screen name='Register' component={SignUp}></AuthStack.Screen>
+            <AuthStack.Screen name={LOGIN} component={Login}></AuthStack.Screen>
+            <AuthStack.Screen name={REGISTER} component={SignUp}></AuthStack.Screen>
         </AuthStack.Navigator>
     );
 }
