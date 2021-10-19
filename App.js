@@ -1,9 +1,12 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import AppNavContainer from './src/navigations/index'; //component created
+import GlobalProvider from './src/context/Priovider';
 const App = () => {
   return(
-    <AppNavContainer></AppNavContainer>
+    <GlobalProvider>
+      <AppNavContainer></AppNavContainer>
+    </GlobalProvider>
   );
 }
 
