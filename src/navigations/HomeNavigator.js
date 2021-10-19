@@ -1,6 +1,7 @@
 import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text } from "react-native";
 
 const Contacts = () => {
     return(
@@ -45,3 +46,5 @@ const HomeNavigator = () => {
         </HomeStack.Navigator>
     );
 }
+
+export default HomeNavigator;
