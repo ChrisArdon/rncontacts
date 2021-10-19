@@ -37,7 +37,7 @@ const Settings = () => {
 const HomeNavigator = () => {
     const HomeStack = createStackNavigator();
     return(
-        <HomeStack.Navigator>
+        <HomeStack.Navigator initialRouterName='Contacts'>
             <HomeStack.Screen name='Contacts' component={Contacts}></HomeStack.Screen>
             <HomeStack.Screen name='Contact Detail' component={ContactDetail}></HomeStack.Screen>
             <HomeStack.Screen name='Create Contact' component={CreateContact}></HomeStack.Screen>
